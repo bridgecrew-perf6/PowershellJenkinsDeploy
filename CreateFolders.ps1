@@ -33,21 +33,21 @@
     }
 
     Process {
-        <#for($i=0; $i -lt $name.Length;$i++){
+        for($i=0; $i -lt $name.Length;$i++){
         $folderName = $name[$i];
         if((Test-Path $path\$folderName) -eq 'True')
         {
             Write-Host "Folder name - $folderName already exists !!, Kindly, mention unique folder names."
             continue
-        }#>
-       <# else
-        {#>
+        }
+        else
+        {
         New-Item -Path $path -Name $folderName -ItemType "directory"
         Write-Host "Created folder - $folderName"
-       # }
-
+        }
 
     }
+}
     End {
         Write-Host 'Terminating Function: Finished Executing'
     }
