@@ -33,7 +33,7 @@
     }
 
     Process {
-      <#  for($i=0; $i -lt $name.Length;$i++){
+        for($i=0; $i -lt $name.Length;$i++){
         $folderName = $name[$i];
         if((Test-Path $path\$folderName) -eq 'True')
         {
@@ -46,7 +46,7 @@
         Write-Host "Created folder - $folderName"
         }
 
-    }#>
+    }
         New-Item -Path $path -Name $folderName -ItemType "directory"
         Write-Host "Created folder - $folderName"
 }
