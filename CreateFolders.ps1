@@ -47,8 +47,7 @@
         }
 
     }
-        New-Item -Path $path -Name $folderName -ItemType "directory"
-        Write-Host "Created folder - $folderName"
+        
 }
     End {
         Write-Host 'Terminating Function: Finished Executing'
