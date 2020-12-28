@@ -31,4 +31,4 @@ Function Copy-Files() {
     }
 }
 
-Copy-Files -SourcePath "C:\Test\f" -DestinationPath "C:\Test\t2"
+Copy-Files -SourcePath "C:\Test\t2" -DestinationPath "C:\Test\f"
