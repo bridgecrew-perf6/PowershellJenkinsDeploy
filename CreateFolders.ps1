@@ -54,4 +54,4 @@
     }
  }
 
- Create-Folders -path "C:\test" -name "e","f","k"
+ Create-Folders -path "C:\test" -name "s1","s2","s3"
